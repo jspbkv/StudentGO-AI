@@ -4728,11 +4728,11 @@
 
         /* ===== CHAT LOGIC ===== */
         let chatConversationId = null;
-        const API_URL = 'http://localhost:3000/api/chat';
+        const API_URL = 'https://studentgo-ai-production.up.railway.app/api/chat';
 
         async function initializeChat() {
             try {
-                const response = await fetch('http://localhost:3000/api/chat/new', {
+                const response = await fetch('https://studentgo-ai-production.up.railway.app/api/chat/new', {
                     method: 'POST'
                 });
                 const data = await response.json();
